@@ -134,7 +134,7 @@ app.delete("/api/calls", (req, res) => {
 
 app.use(express.static(path.join(__dirname, "../dist")));
 
-app.get("/:any(.*)", (req, res) => {
+app.all('*', (req, res) => {
   res.sendFile(path.join(__dirname, "../dist/index.html"));
 });
 // ----------- START SERVER -----------
