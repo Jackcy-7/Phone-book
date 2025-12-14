@@ -7,7 +7,7 @@
     "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview",
-    "build": "npm run build --prefix src",
+    "build": "vite build",
     "start": "node backend/server.js"
   },
   "dependencies": {
