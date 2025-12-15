@@ -468,6 +468,7 @@ function App() {
                     className="call-btn"
                     onClick={() => {
                       if (!phoneNumber.trim()) return;
+                      window.location.href = `tel:${selectedContact.phone}`;
                       addCall(phoneNumber);
                       setPhoneNumber("");
                     }}
@@ -757,6 +758,7 @@ function App() {
                 className="voice-call"
                 onClick={async () => {
                   if (!selectedContact?.phone) return;
+                  window.location.href = `tel:${selectedContact.phone}`;
 
                   const newCall = {
                     number: selectedContact.phone,
