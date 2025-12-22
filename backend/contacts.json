@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "id": "e5138138-8a37-4282-9eb4-f8648f3b8690",
+    "name": "Lily",
+    "phone": "9876543210",
+    "email": "",
+    "saveTo": "phone",
+    "isFavourite": false,
+    "isBlocked": false
+  }
+]
